@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import MovieFinderCard from '../components/MovieFinderCard';
+// import MovieFinderCard from '../components/MovieFinderCard';
+import FoundResults from '../components/FoundResults';
 
 export default class MovieDetailContainer extends Component {
   constructor(props) {
@@ -9,10 +10,8 @@ export default class MovieDetailContainer extends Component {
 
   render() {
     return (
-      <div>
-        <MovieFinderCard />
-        <h1>Movie Detail Container</h1>
-        <p>Viewing movie {this.props.match.params.id}</p>
+      <div style={{ backgroundColor: 'rgb(0, 155, 234)' }}>
+        <FoundResults />
         {console.log(this.props.match.params.id)}
         {console.log('hello this is movie DETAIL container')}
       </div>

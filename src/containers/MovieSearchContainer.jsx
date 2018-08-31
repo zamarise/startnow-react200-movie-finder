@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputField from '../components/InputField';
+import BackgroundSearch from '../components/BackgroundSearch';
 
 export default class MovieSearchContainer extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ export default class MovieSearchContainer extends Component {
   render() {
     return (
       <div>
-        <InputField />
+        <BackgroundSearch />
         {console.log('hello this is movie search container')}
       </div>
     );
