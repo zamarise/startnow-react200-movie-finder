@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MovieFinderCard from '../src/components/MovieFinderCard';
+// import MovieFinderCard from '../src/components/MovieFinderCard';
 // import _ from 'lodash';
 import './styles/App.css';
 
@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div clasName="container">
         {/* <div>{this.renderMovies()}</div> */}
-        <MovieFinderCard />
+        {/* <MovieFinderCard /> */}
       </div>
     );
   }
