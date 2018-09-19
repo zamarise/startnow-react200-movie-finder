@@ -12,8 +12,6 @@ export default class MovieDetailContainer extends Component {
     return (
       <div style={{ backgroundColor: 'rgb(0, 155, 234)' }}>
         <FoundResults />
-        {console.log(this.props.match.params.id)}
-        {console.log('hello this is movie DETAIL container')}
       </div>
     );
   }

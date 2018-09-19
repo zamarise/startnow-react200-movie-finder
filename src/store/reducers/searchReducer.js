@@ -9,7 +9,7 @@ export default (state = initialState, { type, payload }) => {
       const all = [...state.all];
 
       all.push(payload.data);
-      return { ...state, all };
+      return { ...state, all, selected: payload.data };
     default:
       return state;
   }

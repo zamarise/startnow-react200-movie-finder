@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './env';
 import './styles/index.css';
 import 'bulma/css/bulma.css';
-// import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MovieSearchContainer from './containers/MovieSearchContainer';
 import MovieDetailContainer from './containers/MovieDetailContainer';
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+require('dotenv').config();
 
 ReactDOM.render(
   <Provider store={store}>

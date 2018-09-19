@@ -1,13 +1,13 @@
+import '../../env';
 import axios from 'axios';
-import dotenv from 'dotenv';
 export const SEARCH_MOVIE = 'search_movie';
 
-dotenv.config();
+require('dotenv').config();
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
-export function searchMovie(movieTitle) {
-  const url = `https://www.omdbapi.com/?t${movieTitle}&apikey=${API_KEY}`;
+export function searchMovieSubmit(name) {
+  const url = `https://www.omdbapi.com/?t${name}&apikey=${API_KEY}`;
 
   const promise = axios.get(url);
 
